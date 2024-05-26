@@ -1,0 +1,173 @@
+*{
+  padding: 0%;
+  margin: 0%;
+  font-family: 'sans-serif', Segoe UI, Tahoma, Geneva, Verdana, ;
+  box-sizing: border-box;
+}
+
+.main{
+  background-image: url("bg3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* background-attachment: fixed; */
+  height: 100vh;
+  width: 100%;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 45px;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.start{
+  font-size: 35px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+span{
+  color: #ab190c;
+}
+nav ul li{
+  list-style-type: none;
+  display: inline;
+  padding: 10px 25px;
+  font-size:20px ;
+}
+nav ul li a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  text-transform: capitalize;
+  transition: transfrom.0.4s;
+}
+
+nav a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8%;
+  height: 500%;
+  background: var(--lightgray);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-60deg);
+  transition: all 0.3s;
+}
+nav a :hover{
+  color: #27becc;
+  transition: 0.4s;
+  transform: scale(1.2);
+}
+
+.contain{
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+}
+h1{
+  margin: 20px 0px 20px;
+  font-size: 70px;
+}
+h3{
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+h4{
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+span{
+  color: #ab190c;
+}
+
+footer {
+  background-color:#f5f2f3;
+  padding: 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.quick-links,
+.icons {
+  margin-bottom: 10px;
+  font-size: 23px;
+  font-weight: bolder;
+}
+
+.icons ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.icons ul li {
+  display: inline;
+  margin-right: 25px;
+}
+button {
+  border: none;
+  display: block;
+  position: relative;
+  padding: 0.7em 2.4em;
+  font-size: 18px;
+  background: transparent;
+  cursor: pointer;
+  user-select: none;
+  overflow: hidden;
+  color:#ab190c;
+  z-index: 1;
+  font-family: d;
+  font-weight: 500;
+  letter-spacing: 2px;
+
+}
+
+button span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: -1;
+  border: 4px solid 
+  #9dcad5;
+}
+
+button span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8%;
+  height: 500%;
+  background: var(--lightgray);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-60deg);
+  transition: all 0.3s;
+}
+
+button:hover span::before {
+  transform: translate(-50%, -50%) rotate(-90deg);
+  width: 100%;
+  background: 
+  #9dcad5;
+}
+
+button:hover {
+  color: #479003;
+}
+
+button:active span::before {
+  background: #479003;
+}

@@ -1,0 +1,75 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'sans-serif', Segoe UI, Tahoma, Geneva, Verdana, ;
+    box-sizing: border-box;
+}
+.main{
+    background-image: url("bg3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+  }
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.start{
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+  span{
+    color: #ab190c;
+  }
+  nav ul li{
+    list-style-type: none;
+    display: inline;
+    padding: 10px 25px;
+    font-size:20px ;
+  }
+  nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-transform: capitalize;
+    transition: transfrom.0.4s;
+  }
+  nav ul li a :hover{
+    color: #27becc;
+    transition: 0.4s;
+    transform: scale(1.2);
+}
+/* .content1{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border-color: #462a0d;
+    border-style: groove;
+    border-width: 1px;
+} */
+.content1 {
+    margin: 0 auto; /* Center the div horizontally */
+    max-width: 600px; /* Adjust the maximum width as needed */
+    background-color: rgba(255, 255, 255, 0.7); /* Transparent background */
+    opacity: 0.6;
+    padding: 20px; /* Add some padding for better readability */
+    border-radius: 10px;
+    margin-top: 55px;
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    font-style: normal;
+    
+}
